@@ -1,0 +1,19 @@
+{
+  "plugins": [
+    "lodash",
+    "babel-plugin-styled-components",
+    [
+      "module-resolver",
+      {
+        "alias": {
+          "src": "./src",
+          "img": "./images",
+          "test": "./test"
+        },
+        "babel-module": {
+          "extensions": [".js", ".jsx"]
+        }
+      }
+    ]
+  ]
+}

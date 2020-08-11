@@ -1,0 +1,16 @@
+name: AWS
+on:
+  push:
+    branches:
+      - master
+
+env:
+  NODE_ENV: production
+
+jobs:
+  build_and_ship:
+    name: Build and Ship
+    runs-on: ubuntu-18.04
+    steps:
+      - uses: actions/checkout@v2
+      - run: /bin/bash deploy.sh
